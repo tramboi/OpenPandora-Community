@@ -1,0 +1,13 @@
+*** ./src/arch/unix/x11/xaw/x11video.c.orig	2011-01-27 22:58:31.433280001 +0100
+--- ./src/arch/unix/x11/xaw/x11video.c	2011-01-27 23:03:26.589279989 +0100
+***************
+*** 59,64 ****
+--- 59,66 ----
+  #include <X11/Xutil.h>
+  #include <X11/Intrinsic.h>
+  #include <X11/cursorfont.h>
++ #include <X11/Xmd.h>
++ #include <X11/extensions/shmproto.h>
+  
+  #include <stdio.h>
+  #include <stdlib.h>
