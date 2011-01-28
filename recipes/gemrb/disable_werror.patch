@@ -1,0 +1,14 @@
+*** ./CMakeLists.txt.orig	2011-01-28 02:12:31.491261594 +0100
+--- ./CMakeLists.txt	2011-01-28 02:12:50.308261592 +0100
+*************** endif (${LAYOUT} MATCHES "home")
+*** 93,101 ****
+  
+  
+  IF(CMAKE_COMPILER_IS_GNUCXX)
+- 	if ( NOT DISABLE_WERROR )
+- 		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror")
+- 	endif ( NOT DISABLE_WERROR )
+  	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -W -Wpointer-arith -Wcast-align")
+  	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pedantic -Wno-format-y2k -Wno-long-long -fno-strict-aliasing")
+  	# only export symbols explicitly marked to be exported.
+--- 93,98 ----
